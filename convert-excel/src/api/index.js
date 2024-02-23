@@ -6,6 +6,7 @@ const sectors = require('./sectors');
 const cells = require('./cells');
 const villages = require('./villages');
 const schools = require('./schools');
+const convertExcel = require('./convertExcel');
 
 const router = express.Router();
 
@@ -21,5 +22,6 @@ router.use('/sectors', sectors);
 router.use('/cells', cells);
 router.use('/villages', villages);
 router.use('/schools', schools);
+router.use('/convertExcel', convertExcel);
 
 module.exports = router;

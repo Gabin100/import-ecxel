@@ -3,7 +3,7 @@ const app = require('./app');
 
 const MONGO_URI = `mongodb://localhost:27017/applications`;
 
-const port = process.env.PORT || 5000;
+const port = process.env.PORT || 5001;
 
 (async () => {
   await mongoose.connect(MONGO_URI);
